@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Language Learner",
+    "description": "Learn a new language by progressively translating site content.",
+    "version": "1.0",
+    "icons": {
+        "16": "/img/16.png",
+        "48": "/img/48.png",
+        "128": "/img/128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/img/16.png",
+            "48": "/img/48.png",
+            "128": "/img/128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com/*"
+            ],
+            "css": [
+                "main.css"
+            ]
+        }
+    ]
+}
