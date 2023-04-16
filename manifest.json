@@ -21,7 +21,15 @@
                 "https://www.google.com/*"
             ],
             "css": [
-                "main.css"
+                "/src/main.css"
+            ]
+        },
+        {
+            "matches": [
+                "https://en.wikipedia.org/*"
+            ],
+            "js": [
+                "/src/content.js"
             ]
         }
     ]
