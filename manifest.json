@@ -25,9 +25,7 @@
             ]
         },
         {
-            "matches": [
-                "https://en.wikipedia.org/*"
-            ],
+            "matches": ["http://*/*", "https://*/*"],
             "js": [
                 "/src/content.js"
             ]
