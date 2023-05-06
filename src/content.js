@@ -1,7 +1,7 @@
 let divs = document.getElementsByTagName('div');
 
-wordsSearch = ["a", "e", "i"];
-wordsReplace = ["o", "o", "o"];
+wordsSearch = [" I ", "[Yy]our", "[Yy]ou", "[Ll]ove", "[Gg]irl", "[Aa]sia"];
+wordsReplace = [" 我 ", "你", "你", "愛", "女孩", "亚洲"];
 
 for (var i = 0; i < divs.length; i++) {
     let div = divs[i];
