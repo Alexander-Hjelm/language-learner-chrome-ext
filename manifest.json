@@ -27,5 +27,8 @@
                 "/src/content.js"
             ]
         }
+    ],
+    "permissions": [
+        "storage"
     ]
 }
