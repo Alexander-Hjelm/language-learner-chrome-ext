@@ -34,6 +34,7 @@ $(function(){
                 message: `Hello, ${newUsername}!`
             }
             chrome.notifications.create('usernameNotif', notifOptions);
+            close();
         });
     })
 });
