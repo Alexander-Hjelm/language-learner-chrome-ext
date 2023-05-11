@@ -1,3 +1,16 @@
 html body {
     background: url("https://static-cdn.sr.se/images/2054/fe51cd95-c8bc-4863-92c3-588dbe861a1a.jpg");
 }
+
+.gNO89b {
+    margin: 0px;
+    -webkit-animation: spin 4s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform: translate(0px, 0%);}
+    25% {-webkit-transform: translate(-320px, 10%) rotateZ(110deg);}
+    50% {-webkit-transform: translate(320px, 300px) rotateZ(200deg);}
+    75% {-webkit-transform: translate(-120px, -200px) rotateZ(-200deg);}
+    100% {-webkit-transform: translate(0px, 0%);}
+}
