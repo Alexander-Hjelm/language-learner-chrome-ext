@@ -23,4 +23,10 @@ chrome.contextMenus.onClicked.addListener(function(data){
     }
 })
 
+chrome.storage.onChanged.addListener(function(changes, storageName) {
+    chrome.browserAction.setBadgeText({"text": changes.username.newValue.toString()});
+})
+
+chrome.browserAction.setBadgeText({"text": "none"});
+
 // https://developer.chrome.com/docs/extensions/reference/contextMenus/
