@@ -25,6 +25,15 @@ $(function(){
 
             $('#usernameDisplay').text(newUsername);
             $('#name').val('');
+
+            // Send a notification
+            var notifOptions = {
+                type: 'basic',
+                iconUrl: 'img/notif-48.png',
+                title: 'Username was changed!',
+                message: `Hello, ${newUsername}!`
+            }
+            chrome.notifications.create('usernameNotif', notifOptions);
         });
     })
 });

@@ -30,6 +30,7 @@
     ],
     "options_page": "options-page/options.html",
     "permissions": [
-        "storage"
+        "storage",
+        "notifications"
     ]
 }
