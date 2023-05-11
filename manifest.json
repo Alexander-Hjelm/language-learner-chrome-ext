@@ -29,8 +29,13 @@
         }
     ],
     "options_page": "options-page/options.html",
+    "background": {
+        "scripts": ["event-page/eventPage.js"],
+        "persistent": false
+    },
     "permissions": [
         "storage",
-        "notifications"
+        "notifications",
+        "contextMenus"
     ]
 }
