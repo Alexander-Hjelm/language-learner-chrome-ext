@@ -1,13 +1,24 @@
 let divs = document.getElementsByTagName('div');
 
-wordsSearch = [" I ", "[Yy]our", "[Yy]ou", "[Ll]ove", "[Gg]irl", "[Aa]sia"];
-wordsReplace = [" 我 ", "你", "你", "愛", "女孩", "亚洲"];
+wordsSearch = [];
+wordsReplace = [];
 
 chrome.storage.sync.get('username', function(options){
-    console.log("aaa")
-    if(options.username){
-        wordsSearch.push('[Uu]sername');
-        wordsReplace.push(options.username);
+    console.log(`Hello, ${options.username}! :)`)
+})
+
+chrome.storage.sync.get('wordsInput', function(options){
+    if(options.wordsInput){
+        const lines = options.wordsInput.split('\n');
+        const linesSplit = lines.map(line => line.split('|'));
+        linesSplit.forEach(lineSplit => {
+            wordSearch = lineSplit[1];
+            wordReplace = lineSplit[2];
+            wordsSearch.push(wordSearch);
+            wordsReplace.push(wordReplace);
+        });
+        console.log(wordsSearch);
+        console.log(wordsReplace);
     }
     updatePage();
 })
